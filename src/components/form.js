@@ -6,10 +6,14 @@ const Form = ({setInputText}) => {
         console.log(e.target.value);
         setInputText(e.target.value);
     }
+
+    const submitToDoHandler = (e) => {
+        e.preventDefault();
+    }
     return (
         <form>
             <input onChange = {inputTextHandler} type="text" className="todo-input" />
-            <button className="todo-button" type="submit">
+            <button onClick={submitToDoHandler} className="todo-button" type="submit">
                 <i className="fas fas-plus-square"></i>
             </button>
 

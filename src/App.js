@@ -8,6 +8,7 @@ import ToDoList from "./components/todolist";
 function App() {
 
   const [inputText, setInputText] = useState('');
+  const [todos, settodos] = useState([]);
   return (
     <div className="App">
       <header>Akshit's To-Do List </header>
